@@ -22,6 +22,7 @@ class Pins extends Component {
 
     return (
       <StackGrid
+      fluid={true}
       columnWidth={250}
       gutterWidth={7}
       gutterHeight={10}

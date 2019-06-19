@@ -18,10 +18,10 @@ class NavBar extends Component {
             <h2>eque&ntilde;o</h2>
           </div>
         </div>
+        <h3 className="greeting">Welcome, Justin!</h3>
         <div className="nav-options">
-          <h4><a href="/">Home</a></h4>
-          <h4><a href="/savedPins">Saved Pins</a></h4>
-          <h3>Welcome, User!</h3>
+          <h5><a href="/">Home</a></h5>
+          <h5><a href="/savedPins">Saved Pins</a></h5>
         </div>
 
       </div>
