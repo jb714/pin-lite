@@ -7,8 +7,8 @@ class SavedPins extends Component {
   render() {
 
     return (
-      <div className="SavedPins">
-      <p>Feature Coming Soon!</p>
+      <div>
+        <p>Feature Coming Soon!</p>
       </div>
     );
   }

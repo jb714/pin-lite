@@ -53,16 +53,17 @@ Nav h4 {
 
 }
 
-.Image{
+.card-image {
   opacity: 1;
   width: 100%;
 }
 
-.ImageDescription{
+.image-description {
   font-size: 12px;
   padding: 0px 10px;
 }
-.Overlay{
+
+.image-overlay {
   opacity: 0;
   position: absolute;
   width: 100%;
@@ -70,31 +71,39 @@ Nav h4 {
   left: 0;
 }
 
-.Save-Button{
+.save-button {
   background-color: #CA0B28;
   color: #FFFFFF;
+  &:hover {
+    background-color: #AB001C;
+    color: #FFFFFF;
+  }
 }
 
-.Save-Button:hover{
+/* .save-button:hover {
   background-color: #AB001C;
   color: #FFFFFF;
-}
+} */
 
-.Modal-Button{
+.modal-button {
   background-color: #272627;
   color: #EFEFEF;
+  &:hover {
+    background-color: black;
+    color: #EFEFEF;
+  }
 }
 
-.Modal-Button:hover{
+/* .modal-button:hover {
   background-color: black;
   color: #EFEFEF;
-}
+} */
 
-.PinSolo:hover .Image{
+.pin-solo:hover .card-image{
   opacity: 0.3;
 }
 
-.PinSolo:hover .Overlay{
+.pin-solo:hover .image-overlay{
   opacity: 1;
 }
 
