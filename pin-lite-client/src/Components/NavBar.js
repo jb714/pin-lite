@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../App.css';
-import { Nav, Navbar, NavItem } from 'react-bootstrap';
 import pinterestLogo from '../Assets/pinterest-badge-logo.png';
 
 
