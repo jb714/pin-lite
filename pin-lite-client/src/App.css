@@ -74,16 +74,12 @@ Nav h4 {
 .save-button {
   background-color: #CA0B28;
   color: #FFFFFF;
-  &:hover {
-    background-color: #AB001C;
-    color: #FFFFFF;
-  }
 }
 
-/* .save-button:hover {
+.save-button:hover {
   background-color: #AB001C;
   color: #FFFFFF;
-} */
+}
 
 .modal-button {
   background-color: #272627;
@@ -94,10 +90,10 @@ Nav h4 {
   }
 }
 
-/* .modal-button:hover {
+.modal-button:hover {
   background-color: black;
   color: #EFEFEF;
-} */
+}
 
 .pin-solo:hover .card-image{
   opacity: 0.3;

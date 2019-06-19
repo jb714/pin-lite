@@ -39,7 +39,7 @@ class PinSolo extends Component {
         <img src={ImageUrl} className="card-image" alt="Pin visual"/>
         <div className="image-overlay">
 
-          <Button className="Save-Button" href="/savedPins">Save Pin</Button>
+          <Button className="save-button" href="/savedPins">Save Pin</Button>
           <Button className="modal-button" onClick={this.openModal}>Enlarge</Button>
         </div>
 
