@@ -9,23 +9,22 @@ class NavBar extends Component {
   render() {
 
     return (
-      <Navbar fixedTop className="NavBar">
-
-        <Navbar.Brand className="NavBar-Brand">
-          <img src={pinterestLogo} className="brandLogo" alt="Pinterest Logo"/>
-        </Navbar.Brand>
-
-        <Nav className="title">
-          <h2>eque&ntilde;o</h2>
-        </Nav>
-
-        <Nav pullRight>
-          <NavItem href="/"><h4>Home</h4></NavItem>
-          <NavItem href="/savedPins"><h4>Saved Pins</h4></NavItem>
+      <div className="navbar">
+        <div className="logo-title-container">
+          <div className="logo-container">
+            <img src={pinterestLogo} className="brand-logo" alt="Pinterest Logo"/>
+          </div>
+          <div className="title">
+            <h2>eque&ntilde;o</h2>
+          </div>
+        </div>
+        <div className="nav-options">
+          <h4><a href="/">Home</a></h4>
+          <h4><a href="/savedPins">Saved Pins</a></h4>
           <h3>Welcome, User!</h3>
-        </Nav>
+        </div>
 
-      </Navbar>
+      </div>
 
     );
   }

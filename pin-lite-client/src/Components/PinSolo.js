@@ -35,30 +35,30 @@ class PinSolo extends Component {
 
 
     return (
-      <div className="PinSolo">
-        <img src={ImageUrl} className="Image" alt="Pin visual"/>
-        <div className="Overlay">
+      <div className="pin-solo">
+        <img src={ImageUrl} className="card-image" alt="Pin visual"/>
+        <div className="image-overlay">
 
-          <Button className="Save-Button" href="/savedPins">Save Pin</Button>
-          <Button className="Modal-Button" onClick={this.openModal}>Enlarge</Button>
+          <Button className="save-button" href="/savedPins">Save Pin</Button>
+          <Button className="modal-button" onClick={this.openModal}>Enlarge</Button>
         </div>
 
-        <Modal show={this.state.open} onHide={this.closeModal}>
+        <Modal show={this.state.open} onHide={this.closeModal} animation={false}>
           <Modal.Header closeButton>
-          <h3>{Title}</h3>
-            <div><img src={ImageUrl} className="Image" alt="Pin visual"/></div>
+            <h3>{Title}</h3>
+            <div><img src={ImageUrl} className="card-image" alt="Pin visual"/></div>
           </Modal.Header>
           <Modal.Body>
-          <div>
-          <h5>Pinner:</h5>
-          <p>{Pinner}</p>
-          <h5>Description: </h5>
-          <p>{ImageDescription}</p>
-          </div>
-          <Button className="Save-Button" href="/savedPins">Save Pin</Button>
+            <div>
+              <h5 className="h5">Pinner:</h5>
+              <p>{Pinner}</p>
+              <h5 className="h5">Description: </h5>
+              <p>{ImageDescription}</p>
+            </div>
+            <Button className="save-button" href="/savedPins">Save Pin</Button>
           </Modal.Body>
           <Modal.Footer>
-          <Button onClick={this.closeModal}>Close</Button>
+            <Button onClick={this.closeModal}>Close</Button>
           </Modal.Footer>
         </Modal>
 

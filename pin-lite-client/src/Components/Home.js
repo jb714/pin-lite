@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import pinsService from '../Services/pinsService.js';
 import Pins from './Pins.js';
 import _ from 'underscore';
-// import './App.css';
 
 class Home extends Component {
   constructor(){
@@ -74,7 +73,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="Home">
+      <div>
         <Pins newPins={this.state.newPins}/>
       </div>
     );

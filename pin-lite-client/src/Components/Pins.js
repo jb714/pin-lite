@@ -19,7 +19,7 @@ class Pins extends Component {
         </span >
       })
     }
-    
+
     return (
       <StackGrid
       columnWidth={250}
@@ -27,7 +27,7 @@ class Pins extends Component {
       gutterHeight={10}
       duration={0}
       >
-      {pins}
+        {pins}
       </StackGrid>
     );
   }
