@@ -50,9 +50,9 @@ class PinSolo extends Component {
           </Modal.Header>
           <Modal.Body>
           <div>
-          <h5>Pinner:</h5>
+          <h5 className="h5">Pinner:</h5>
           <p>{Pinner}</p>
-          <h5>Description: </h5>
+          <h5 className="h5">Description: </h5>
           <p>{ImageDescription}</p>
           </div>
           <Button className="Save-Button" href="/savedPins">Save Pin</Button>

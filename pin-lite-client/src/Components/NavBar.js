@@ -9,10 +9,10 @@ class NavBar extends Component {
   render() {
 
     return (
-      <Navbar fixedTop className="NavBar">
+      <Navbar fixedTop className="navbar">
 
-        <Navbar.Brand className="NavBar-Brand">
-          <img src={pinterestLogo} className="brandLogo" alt="Pinterest Logo"/>
+        <Navbar.Brand className="navbar-brand">
+          <img src={pinterestLogo} className="brand-logo" alt="Pinterest Logo"/>
         </Navbar.Brand>
 
         <Nav className="title">

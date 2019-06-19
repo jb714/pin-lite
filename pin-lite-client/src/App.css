@@ -3,36 +3,36 @@ body{
   padding-top:130px;
 }
 
-h5{
+.h5{
   font-weight: bold;
 }
 
-.App {
+.app-container {
   text-align: center;
 }
 
 /*NavBar Styles*/
-.NavBar{
+.navbar {
   margin-bottom: 20px;
 }
 
-.NavBar-Brand{
+.navbar-brand {
   padding-right: 2px;
 }
 
-.brandLogo{
+.brand-logo {
   width: 70px;
   height: auto;
   display: inline-block;
 }
 
-.title{
+.title {
   color: #CA0B28;
   font-family: 'Pacifico';
   margin-bottom: 0px;
 }
 
-Nav h4{
+Nav h4 {
   color: #CA0B28;
 }
 
@@ -42,7 +42,7 @@ Nav h4{
 
 /*PinSolo + Pin Overlay specific styles*/
 
-.PinSolo{
+.pin-solo {
   border: 2px solid #F3F3F3;
   border-radius: 10px;
   width:236px;
