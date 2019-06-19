@@ -43,7 +43,7 @@ class PinSolo extends Component {
           <Button className="modal-button" onClick={this.openModal}>Enlarge</Button>
         </div>
 
-        <Modal show={this.state.open} onHide={this.closeModal}>
+        <Modal show={this.state.open} onHide={this.closeModal} animation={false}>
           <Modal.Header closeButton>
             <h3>{Title}</h3>
             <div><img src={ImageUrl} className="card-image" alt="Pin visual"/></div>

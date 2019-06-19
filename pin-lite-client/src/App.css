@@ -20,6 +20,12 @@ body{
   padding-right: 2px;
 }
 
+.logo-title-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .brand-logo {
   width: 70px;
   height: auto;
@@ -30,6 +36,10 @@ body{
   color: #CA0B28;
   font-family: 'Pacifico';
   margin-bottom: 0px;
+}
+
+.nav-options a {
+  color: #CA0B28;
 }
 
 Nav h4 {
@@ -93,6 +103,10 @@ Nav h4 {
 .modal-button:hover {
   background-color: black;
   color: #EFEFEF;
+}
+
+.modal-backdrop {
+  opacity: 0.5;
 }
 
 .pin-solo:hover .card-image{
