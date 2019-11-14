@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+const path = require('path');
 var allPins = require('./Data/pins_formatted.json');
 var cors = require('cors');
 
@@ -10,6 +11,12 @@ app.listen(port, function(){
 });
 
 app.use(cors());
+
+app.use(express.static(path.join(__dirname, 'pin-lite-client/build')));
+
+app.get('*', (req,res) => {
+  res.sendFile(path.join(__dirname, 'pin-lite-client/build/index.html'))
+});
 
 app.get("/", function(req,res){
   res.send("Welcome Home");

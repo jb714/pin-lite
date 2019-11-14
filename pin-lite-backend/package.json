@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
-    "test": "test"
+    "test": "test",
+    "heroku-postbuild": "cd pin-lite-client && npm install && npm run build"
   },
   "author": "Justin Bell",
   "license": "ISC",
