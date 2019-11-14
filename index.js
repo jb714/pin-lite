@@ -1,10 +1,14 @@
-var express = require('express');
-var app = express();
-var appRoutes = require('./pin-lite-backend/appRoutes');
-var path = require('path');
-var cors = require('cors');
+const express = require('express');
+const app = express();
+const appRoutes = require('./pin-lite-backend/appRoutes');
+const path = require('path');
+const cors = require('cors');
+const proxy = require('http-proxy-middleware');
+const port = process.env.PORT || 8080;
 
-var port = process.env.PORT || 8080;
+module.exports = function(app) {
+  app.use(proxy(['/allPins'], { target: 'http://localhost:8080'}))
+}
 
 app.listen(port, function(){
   console.log("Now listening on Port "  + port);
