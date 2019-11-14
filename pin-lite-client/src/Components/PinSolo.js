@@ -45,14 +45,16 @@ class PinSolo extends Component {
 
         <Modal show={this.state.open} onHide={this.closeModal} animation={false}>
           <Modal.Header closeButton>
-            <h3>{Title}</h3>
-            <div><img src={ImageUrl} className="card-image" alt="Pin visual"/></div>
           </Modal.Header>
           <Modal.Body>
+            <div className="h5">{Title}</div>
+            <div className="enlarged-image-container">
+              <img src={ImageUrl} className="card-image enlarged" alt="Pin visual"/>
+            </div>
             <div>
-              <h5 className="h5">Pinner:</h5>
+              <div className="h5">Pinner:</div>
               <p>{Pinner}</p>
-              <h5 className="h5">Description: </h5>
+              <div className="h5">Description: </div>
               <p>{ImageDescription}</p>
             </div>
             <Button className="save-button" href="/savedPins">Save Pin</Button>

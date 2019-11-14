@@ -73,7 +73,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
+      <div className="pins-container">
         <Pins newPins={this.state.newPins}/>
       </div>
     );

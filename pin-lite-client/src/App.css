@@ -1,8 +1,4 @@
 /*Universal Styles*/
-body{
-  padding-top: 50px;
-}
-
 .h5{
   font-weight: bold;
 }
@@ -13,12 +9,16 @@ body{
 
 /*NavBar Styles*/
 .flex-nav {
+  position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
   margin-bottom: 40px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid black;
+  padding: 20px 0px;
+  background-color: white;
+  border-bottom: 3px solid black;
+  z-index: 500;
 }
 
 .logo-title-container {
@@ -57,6 +57,9 @@ body{
   color: #CA0B28;
 }
 
+.pins-container {
+  padding-top: 140px;
+}
 /*PinSolo + Pin Overlay specific styles*/
 
 .pin-solo {
@@ -73,6 +76,20 @@ body{
 .card-image {
   opacity: 1;
   width: 100%;
+}
+
+.card-image.enlarged {
+  max-width: 500px;
+  max-height: 500px;
+  height: auto;
+  width: auto;
+}
+
+.enlarged-image-container {
+  text-align: center;
+  background-color: black;
+  border-radius: 4px;
+  margin: 16px 0px;
 }
 
 .image-description {
