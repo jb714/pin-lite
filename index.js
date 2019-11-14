@@ -15,6 +15,7 @@ app.use(express.static(path.join(__dirname, 'pin-lite-client/build')));
 
 app.get("/", function(req,res){
   res.send("Welcome Home");
+  console.log("Pins have been sent???");
 });
 
 app.get("/allPins", function(req,res){
