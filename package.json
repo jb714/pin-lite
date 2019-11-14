@@ -4,7 +4,7 @@
   "description": "Pin-lite/Pequeño",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "test": "test",
     "heroku-postbuild": "cd pin-lite-client && npm install && npm run build"
   }
