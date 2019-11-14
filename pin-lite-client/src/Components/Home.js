@@ -9,13 +9,9 @@ class Home extends Component {
 
     this.state = {
       newPins: [],
-      savedPins: []
     };
 
     this.pinsService = new pinsService();
-    this.grabPins = this.grabPins.bind(this);
-    this.shufflePins = this.shufflePins.bind(this);
-    this.onScroll = this.onScroll.bind(this);
   }
 
   componentDidMount(){
@@ -33,8 +29,7 @@ class Home extends Component {
   }
 
   //Function that makes use of  'pinsService' to makeAjax call to our dataset endpoint
-  grabPins(){
-
+  grabPins = () => {
     this.pinsService.getData()
     .then((response) => {
 
@@ -42,23 +37,21 @@ class Home extends Component {
       var pins = this.shufflePins(response.data);
       //If the newPins array is empty, set it explicitly to our new, shuffled array.
       if(!this.state.newPins.length){
-        this.setState({newPins: pins}, () => {
-          console.log(this.state.newPins.length);
-        })
+        this.setState({newPins: pins})
       }
       //Otherwise, concatenate our new, shuffled array with the array already there
       else {
-        this.setState({newPins: this.state.newPins.concat(pins)}, () => {
-          console.log(this.state.newPins.length);
-        })
+        this.setState({newPins: this.state.newPins.concat(pins)})
       }
     })
-
+    .catch((err) => {
+      console.log('Error:', err);
+    })
   }
 
 
   //Using Fisher-Yates shuffle to minimize rendering order repeats when dataset array is reloaded
-  shufflePins(array){
+  shufflePins = (array) => {
     var copy = array.slice();
     var i = 0, j = 0, temp = null;
     for(i=copy.length -1; i > 0; i-=1) {
@@ -74,7 +67,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Pins newPins={this.state.newPins}/>
+        <Pins newPins={this.state.newPins} toSavePin={this.props.toSavePin}/>
       </div>
     );
   }

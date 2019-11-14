@@ -15,14 +15,13 @@ class Pins extends Component {
       pins = this.props.newPins.map(pin =>{
         pin.uuid = uuid.v4();
         return <span key={pin.uuid}>
-        <PinSolo pin={pin}/>
+        <PinSolo pin={pin} toSavePin={this.props.toSavePin}/>
         </span >
       })
     }
 
     return (
       <StackGrid
-      fluid={true}
       columnWidth={250}
       gutterWidth={7}
       gutterHeight={10}
