@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
-const path = require('path');
+var appRoutes = require('./pin-lite-backend/appRoutes');
+var path = require('path');
 var cors = require('cors');
 
 var port = process.env.PORT || 8080;
