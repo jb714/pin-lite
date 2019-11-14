@@ -7,7 +7,8 @@ var cors = require('cors');
 var port = process.env.PORT || 8080;
 
 app.listen(port, function(){
-  console.log("Now listening on Port 8080")
+  console.log("Now listening on Port "  + port);
+  console.log("AppRoutes! "  + appRoutes);
 });
 
 app.use(cors());
