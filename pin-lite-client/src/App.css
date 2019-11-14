@@ -12,14 +12,13 @@ body{
 }
 
 /*NavBar Styles*/
-.navbar {
+.flex-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin-bottom: 40px;
   padding-bottom: 20px;
   border-bottom: 1px solid black;
-}
-
-.navbar-brand {
-  padding-right: 2px;
 }
 
 .logo-title-container {
@@ -29,34 +28,34 @@ body{
 }
 
 .brand-logo {
-  width: 70px;
+  width: 44px;
   height: auto;
-  display: inline-block;
 }
 
 .title {
   color: #CA0B28;
   font-family: 'Pacifico';
+  font-size: 24px;
   margin-bottom: 0px;
 }
 
 .greeting {
   font-family: 'Pacifico';
+  font-size: 24px;
+}
+
+.nav-options{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
 }
 
 .nav-options a {
   font-family: 'Pacifico';
-  display: inline-block;
+  font-size: 18px;
   color: #CA0B28;
 }
-
-Nav h4 {
-  color: #CA0B28;
-}
-
-
-
-
 
 /*PinSolo + Pin Overlay specific styles*/
 
@@ -125,7 +124,16 @@ Nav h4 {
   opacity: 1;
 }
 
+@media screen and (max-width: 376px) {
 
+  .title, .nav-options a {
+    font-size: 14px;
+  }
+
+  .greeting {
+    font-size: 18px;
+  }
+}
 
 
 /*Fonts */

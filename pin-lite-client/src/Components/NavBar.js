@@ -8,19 +8,19 @@ class NavBar extends Component {
   render() {
 
     return (
-      <div className="navbar">
+      <div className="flex-nav">
         <div className="logo-title-container">
           <div className="logo-container">
             <img src={pinterestLogo} className="brand-logo" alt="Pinterest Logo"/>
           </div>
           <div className="title">
-            <h2>eque&ntilde;o</h2>
+            eque&ntilde;o
           </div>
         </div>
-        <h3 className="greeting">Welcome, Justin!</h3>
+        <div className="greeting">Welcome, Justin!</div>
         <div className="nav-options">
-          <h5><a href="/">Home</a></h5>
-          <h5><a href="/savedPins">Saved Pins</a></h5>
+          <a href="/">Home</a>
+          <a href="/savedPins">Saved Pins</a>
         </div>
 
       </div>

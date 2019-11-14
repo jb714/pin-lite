@@ -9,6 +9,7 @@ class SavedPins extends Component {
     return (
       <div>
         <p>Feature Coming Soon!</p>
+        <p>Planning to retool this with Redux.</p>
       </div>
     );
   }
