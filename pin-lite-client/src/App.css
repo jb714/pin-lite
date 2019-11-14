@@ -51,10 +51,14 @@
   flex-direction: column;
 }
 
-.nav-options a {
+.nav-options a,p {
   font-family: 'Pacifico';
   font-size: 18px;
   color: #CA0B28;
+}
+
+.tiny-text {
+  font-size: 10px;
 }
 
 .pins-container {

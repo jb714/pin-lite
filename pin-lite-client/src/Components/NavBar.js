@@ -20,7 +20,7 @@ class NavBar extends Component {
         <div className="greeting">Welcome, Justin!</div>
         <div className="nav-options">
           <a href="/">Home</a>
-          <a href="/savedPins">Saved Pins</a>
+          <p href="/savedPins">Saved Pins <span className="tiny-text">coming soon!</span></p>
         </div>
 
       </div>
